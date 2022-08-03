@@ -1,6 +1,6 @@
 # Todo+
 
-This is the Todo app to make shores fun!
+This is the Todo app to make shores shiver!
 
 ## Usage
 
