@@ -1,30 +1,11 @@
-# Goalsetter MERN app
+# Todo+
 
-This is the goalsetter app from the [Learn the MERN Stack](https://www.youtube.com/watch?v=-0exw-9YJBo) series on YouTube.
+This is the Todo app to make shores fun!
 
 ## Usage
 
-Rename the .envexample to .env and add your MONGO_URI
+1. Choose from a category 
+2. Choose a timeframe 
+3. Do the thing 
+4. Get the points 
 
-### Install dependencies
-
-```
-# Backend deps
-npm install
-
-# Frontend deps
-cd frontend
-npm install
-```
-
-### Run Server
-
-```
-npm run server
-```
-
-## Demo
-
-I am not sure how long this will be up
-
-https://mernappbrad.herokuapp.com/
