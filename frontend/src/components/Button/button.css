@@ -1,9 +1,9 @@
 .btn {
 	padding: 10px 20px;
-	border: 1px solid #000;
+	border: 1px solid var(--light-text-color);
 	border-radius: 5px;
-	background: #000;
-	color: #fff;
+	background: var(--dark-bg-color);
+	color: var(--light-text-color);
 	font-size: 16px;
 	font-weight: 700;
 	cursor: pointer;
@@ -19,8 +19,8 @@
 }
 
 .btn-reverse {
-	background: #fff;
-	color: #000;
+	background: var(--light-bg-color);
+	color: var(--dark-text-color);
 }
 
 .btn-block {

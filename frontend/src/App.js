@@ -5,10 +5,11 @@ import Header from "./components/Header/Header";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import "./app.css";
 
 function App() {
 	return (
-		<>
+		<div className="app">
 			<Router>
 				<div className="container">
 					<Header />
@@ -20,7 +21,7 @@ function App() {
 				</div>
 			</Router>
 			<ToastContainer />
-		</>
+		</div>
 	);
 }
 

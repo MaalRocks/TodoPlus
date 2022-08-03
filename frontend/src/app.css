@@ -1,0 +1,4 @@
+.app {
+	background-color: var(--dark-bg-color);
+	color: var(--light-text-color);
+}

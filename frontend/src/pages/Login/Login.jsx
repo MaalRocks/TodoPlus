@@ -7,6 +7,7 @@ import { login, reset } from "../../features/auth/authSlice";
 import Spinner from "../../components/Spinner/Spinner";
 import Button from "../../components/Button/Button";
 import FormGroup from "../../components/FormGroup/FormGroup";
+import "./login.css";
 
 function Login() {
 	const [formData, setFormData] = useState({
@@ -70,25 +71,20 @@ function Login() {
 				<form onSubmit={onSubmit}>
 					<FormGroup
 						type="email"
-						className="form-control"
 						id="email"
 						name="email"
 						value={email}
 						placeholder="Enter your email"
 						onChange={onChange}
 					/>
-					<div className="form-group">
-						<input
-							type="password"
-							className="form-control"
-							id="password"
-							name="password"
-							value={password}
-							placeholder="Enter password"
-							onChange={onChange}
-						/>
-					</div>
-
+					<FormGroup
+						type="password"
+						id="password"
+						name="password"
+						value={password}
+						placeholder="Enter password"
+						onChange={onChange}
+					/>
 					<div className="form-group">
 						<Button type="submit" btnText="Submit" />
 					</div>

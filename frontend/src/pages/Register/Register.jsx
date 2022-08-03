@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { FaUser } from "react-icons/fa";
 import { register, reset } from "../../features/auth/authSlice";
 import Spinner from "../../components/Spinner/Spinner";
+import FormGroup from "../../components/FormGroup/FormGroup";
 
 function Register() {
 	const [formData, setFormData] = useState({
@@ -73,50 +74,38 @@ function Register() {
 
 			<section className="form">
 				<form onSubmit={onSubmit}>
-					<div className="form-group">
-						<input
-							type="text"
-							className="form-control"
-							id="name"
-							name="name"
-							value={name}
-							placeholder="Enter your name"
-							onChange={onChange}
-						/>
-					</div>
-					<div className="form-group">
-						<input
-							type="email"
-							className="form-control"
-							id="email"
-							name="email"
-							value={email}
-							placeholder="Enter your email"
-							onChange={onChange}
-						/>
-					</div>
-					<div className="form-group">
-						<input
-							type="password"
-							className="form-control"
-							id="password"
-							name="password"
-							value={password}
-							placeholder="Enter password"
-							onChange={onChange}
-						/>
-					</div>
-					<div className="form-group">
-						<input
-							type="password"
-							className="form-control"
-							id="password2"
-							name="password2"
-							value={password2}
-							placeholder="Confirm password"
-							onChange={onChange}
-						/>
-					</div>
+					<FormGroup
+						type="text"
+						id="name"
+						name="name"
+						value={name}
+						placeholder="Enter your name"
+						onChange={onChange}
+					/>
+					<FormGroup
+						type="email"
+						id="email"
+						name="email"
+						value={email}
+						placeholder="Enter your email"
+						onChange={onChange}
+					/>
+					<FormGroup
+						type="password"
+						id="password"
+						name="password"
+						value={password}
+						placeholder="Enter password"
+						onChange={onChange}
+					/>
+					<FormGroup
+						type="password"
+						id="password2"
+						name="password2"
+						value={password2}
+						placeholder="Confirm password"
+						onChange={onChange}
+					/>
 					<div className="form-group">
 						<button type="submit" className="btn btn-block">
 							Submit
