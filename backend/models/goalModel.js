@@ -7,6 +7,11 @@ const goalSchema = mongoose.Schema(
 			required: true,
 			ref: "User",
 		},
+		category: {
+			type: mongoose.Schema.Types.ObjectId,
+			require: true,
+			ref: "Category",
+		},
 		text: {
 			type: String,
 			required: [true, "Please add a text value"],
