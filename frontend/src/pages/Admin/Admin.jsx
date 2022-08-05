@@ -8,7 +8,6 @@ export default function Admin() {
 	return (
 		<div className="admin">
 			<div>HIer ensteht ein Adminbereich {user.name}</div>
-			<CategoryForm />
 		</div>
 	)
 }

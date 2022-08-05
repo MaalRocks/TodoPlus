@@ -1,4 +1,7 @@
 .app {
-	background-color: var(--dark-bg-color);
-	color: var(--light-text-color);
+	height: 100vh;
+	background: var(--bg-image-url);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--dark-text-color);
 }

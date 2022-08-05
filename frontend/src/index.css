@@ -9,7 +9,29 @@
 	--dark-text-color: #000000;
 	--light-text-color: #f5deb3;
 
+	--bg-image-url: url("./assets/images/coffee.jpg");
+
 	/* Link Color */
+}
+
+@font-face {
+	font-family: "MrGrieves";
+	src: local("MrGrieves"),
+		url("./assets/fonts/Mr-Grieves/MrGrieves-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Basement";
+	src: local("Basement"),
+		url("./assets/fonts/Basement/Basement-Medium.ttf") format("truetype");
+}
+
+.font-face-mr-grieves {
+	font-family: "MrGrieves";
+}
+
+.font-face-basement {
+	font-family: "Basement";
 }
 
 * {
@@ -50,7 +72,7 @@ h3 {
 
 .container {
 	width: 100%;
-	max-width: 960px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
 	text-align: center;

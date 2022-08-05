@@ -63,12 +63,12 @@ function Login() {
 	}
 
 	return (
-		<>
+		<div className="login">
 			<section className="heading">
 				<h1>
 					<FaSignInAlt /> Login
 				</h1>
-				<p>Login and start setting goals</p>
+				<p className="">Login and start setting goals</p>
 			</section>
 
 			<section className="form">
@@ -94,7 +94,7 @@ function Login() {
 					</div>
 				</form>
 			</section>
-		</>
+		</div>
 	)
 }
 
