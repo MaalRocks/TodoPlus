@@ -1,6 +1,6 @@
 .app {
 	height: 100vh;
-	background: var(--bg-image-url);
+	background: var(--bg-blured-image-url);
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: var(--dark-text-color);

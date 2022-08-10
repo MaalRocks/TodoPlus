@@ -1,9 +1,9 @@
-import { useDispatch } from "react-redux";
-import { deleteGoal } from "../../features/goals/goalSlice";
-import "./goalitem.css";
+import { useDispatch } from "react-redux"
+import { deleteGoal } from "../../features/goals/goalSlice"
+import "./goalitem.css"
 
 function GoalItem({ goal }) {
-	const dispatch = useDispatch();
+	const dispatch = useDispatch()
 
 	return (
 		<div className="goal">
@@ -13,7 +13,7 @@ function GoalItem({ goal }) {
 				X
 			</button>
 		</div>
-	);
+	)
 }
 
-export default GoalItem;
+export default GoalItem

@@ -15,4 +15,6 @@ const createCategory = async (categoryData, token) => {
 	return response.data
 }
 
-// Get
+const categoryService = createCategory
+
+export default categoryService

@@ -9,7 +9,8 @@
 	--dark-text-color: #000000;
 	--light-text-color: #f5deb3;
 
-	--bg-image-url: url("./assets/images/coffee.jpg");
+	--bg-image-url: url("./assets/images/BG/coffee.jpg");
+	--bg-blured-image-url: url("./assets/images/BG/coffeeBlur.jpg");
 
 	/* Link Color */
 }

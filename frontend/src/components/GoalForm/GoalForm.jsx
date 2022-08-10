@@ -2,9 +2,11 @@ import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { createGoal } from "../../features/goals/goalSlice"
 import Button from "../Button/Button"
+import Dropdown from "../Dropdown/Dropdown"
 
 function GoalForm() {
 	const [text, setText] = useState("")
+	
 
 	const dispatch = useDispatch()
 
@@ -27,7 +29,9 @@ function GoalForm() {
 						value={text}
 						onChange={(e) => setText(e.target.value)}
 					/>
+					<Dropdown categories={} />
 				</div>
+
 				<div className="form-group">
 					<Button type="submit" btnText="Task hinzufügen" />
 				</div>

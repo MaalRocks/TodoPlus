@@ -5,15 +5,15 @@ const Goal = require("../models/goalModel")
 // @desc    Get goals
 // @route   GET /api/goals
 // @access  Private
-// eine goals variable wird erstellt
-// die find() methode der "Model"-klasse wird aufgerufen
-// diese sucht in der db nach einem "user:"" auf den die parameter zutreffen
-// und returned es als mongoose-"Query"-object
-// als parameter wird user.id übergeben
-// dieser Wert wird aus dem http request geholt (req.user.id)
-// (req.user.id) enthält daten weil "authMiddleware.js"
-// per JWT einen datenbank abgleich macht
 const getGoals = asyncHandler(async (req, res) => {
+	// eine goals variable wird erstellt
+	// die find() methode der "Model"-klasse wird aufgerufen
+	// diese sucht in der db nach einem "user:"" auf den die parameter zutreffen
+	// und returned es als mongoose-"Query"-object
+	// als parameter wird user.id übergeben
+	// dieser Wert wird aus dem http request geholt (req.user.id)
+	// (req.user.id) enthält daten weil "authMiddleware.js"
+	// per JWT einen datenbank abgleich macht
 	const goals = await Goal.find({ user: req.user.id })
 
 	res.status(200).json(goals)

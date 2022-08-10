@@ -8,6 +8,11 @@ export default function Admin() {
 	return (
 		<div className="admin">
 			<div>HIer ensteht ein Adminbereich {user.name}</div>
+			<div>
+				Verschiedene Dinge die Man adden kann:
+				<div>Kategory</div>
+				<div>Punkte</div>
+			</div>
 		</div>
 	)
 }
