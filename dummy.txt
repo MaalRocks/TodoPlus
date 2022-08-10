@@ -1,0 +1,5 @@
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = mongodb+srv://admin:admin@todopluscluster.iy1mmjt.mongodb.net/todoPlusDB?retryWrites=true&w=majority
+JWT_SECRET = abc123
+ADMIN_ID = 62ea647cc682ba0a40b80cb4
